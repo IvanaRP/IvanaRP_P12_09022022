@@ -8,6 +8,8 @@ import Profil from "./pages/Profil";
 
 import Header from "./components/Header";
 
+import "./styles/index.css";
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
@@ -15,7 +17,7 @@ ReactDOM.render(
       <Routes>
 
           <Route exact path="/" element={<Home/>}/>
-          <Route exact path="/about" element={<Profil/>}/>
+          <Route exact path="/profil" element={<Profil/>}/>
           <Route path="*" element={<Error/>}/>
    
       </Routes>

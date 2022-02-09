@@ -1,0 +1,36 @@
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+
+.navigationLeftContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 10%;
+    height: 100vh;
+    background: #020203;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+
+.navLeftContainer{
+    padding: 10px;
+}
+.navLeft-link{
+    padding: 10px;
+}
+
+.navLeft-copy{
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    color: white;
+    font-family: Roboto;
+
+font-size: 12px;
+margin: 20px;
+}

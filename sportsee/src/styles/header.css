@@ -1,0 +1,40 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto");
+
+.headContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px;
+  background: #020203;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  z-index: 20;
+}
+
+.headLogo {
+  height: 60px;
+  width: auto;
+  padding: 10px;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.header-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+  font-style: normal;
+  margin-left: 35px;
+}
+
+a:active {
+  border-bottom: 3px solid red;
+}

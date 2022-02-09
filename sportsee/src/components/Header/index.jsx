@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
+import HeaderLogo from "../../assets/logo.svg";
+
+import "../../styles/header.css";
+
 
 function Header() {
   return (
     <div className="headContainer">
-      <Link to="/">header LOGO</Link>
+      <Link to="/">
+      <img src={HeaderLogo} alt="SportSee" className="headLogo" />
+      </Link>
       <nav className="navContainer">
         <Link to="/" className="header-link">
           Accueil
@@ -12,7 +18,7 @@ function Header() {
           Profil
         </Link>
         <Link to="/settings" className="header-link">
-          Reglage
+          Réglage
         </Link>
         <Link to="/community" className="header-link">
           Communaute
