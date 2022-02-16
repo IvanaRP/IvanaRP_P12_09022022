@@ -20,6 +20,8 @@ a:link {
 
 .navLeftContainer{
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .navLeft-link{
     padding: 10px;
