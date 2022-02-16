@@ -4,7 +4,8 @@ import CarbIcon from "../../assets/carbs-icon.svg";
 import FatIcon from "../../assets/fat-icon.svg";
 
 import "../../styles/graphCard.css";
-
+ import dataUsers from "../../datas/USER_MAIN_DATA";
+ console.log(dataUsers);
 
 function GraphCard() {
     return (
