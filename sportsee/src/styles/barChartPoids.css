@@ -1,0 +1,28 @@
+.poidsWrapper{
+    height: 200px;
+    width: 500px;
+    margin-right: 20px;
+    box-shadow: 0px 2px 4px 0px #00000025;
+
+}
+
+.recharts-responsive-container{
+    display: flex;
+    height: 200px;
+    width: 500px;
+}
+.recharts-rectangle{
+    height: 200px;
+}
+.recharts-wrapper{
+    height: 200px;
+}
+
+.recharts-legend-wrapper{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    left: -71px;
+    /* top: 1px; */
+}
+
