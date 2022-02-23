@@ -49,18 +49,26 @@ const data = [
 ];
 
 export default function GraphObjectif() {
-  
+  const renderLegend = () => {
+    
+    return (
+        <div className="custom-legend">
+            <p>Durée moyenne des sessions</p>
+        </div>
+    )
+}
     return (
       <div className="objectifWrapper"> 
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer  width="100%" height="100%" >
         <LineChart
-          width={500}
-          height={300}
+      
+           width={258}
+           height={263}
           data={data}
           margin={{
-            top: 5,
-            right: 30,
-            left: 20,
+            top: 0,
+            right: 5,
+            left: 5,
             bottom: 5,
           }}
         >
@@ -68,9 +76,8 @@ export default function GraphObjectif() {
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Legend />
-          <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+          <Legend  verticalAlign="top" align="left" content={renderLegend}/>
+          <Line type="monotone" dataKey="pv"  strokeDashArray="0" strokeWidth={2} stroke="white" animationBegin={0} activeDot={{ stroke: 'white', strokeWidth: 2, fill: 'white', r: 3 }} />
         </LineChart>
       </ResponsiveContainer>
       </div>

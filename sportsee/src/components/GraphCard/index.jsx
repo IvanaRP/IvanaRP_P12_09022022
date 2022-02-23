@@ -7,6 +7,9 @@ import "../../styles/graphCard.css";
  import dataUsers from "../../datas/USER_MAIN_DATA";
  console.log(dataUsers);
 
+
+ 
+
 function GraphCard() {
     return (
         <div className="graphContainerRight">
@@ -15,7 +18,7 @@ function GraphCard() {
             <img src={CaloriesIcon} alt="SportSee"  />
           </div>
           <div className="caloriesInfo">
-            <h2>1,930kc</h2>
+            <h2>22002kc</h2>
             <h3>Calories</h3>
           </div>
         </div>

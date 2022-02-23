@@ -1,9 +1,27 @@
 .objectifWrapper{
-    background: #FF0000;
+    /* background: #FF0000; */
+    background: linear-gradient(90deg, #ff0000 70%, #da0000 0%);
     border-radius: 5px;
     width: 258px;
     height: 263px;
     margin-right: 20px;
     box-shadow: 0px 2px 4px 0px #00000025;
 
+}
+
+.custom-legend{
+    color: white;
+    opacity: 0.5;
+}
+
+
+.recharts-cartesian-grid{
+    display: none;
+}
+
+
+.recharts-responsive-container{
+    display: flex;
+    height: 200px;
+    width: 500px;
 }

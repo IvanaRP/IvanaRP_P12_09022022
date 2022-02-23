@@ -22,7 +22,9 @@
     position: absolute;
     display: flex;
     justify-content: flex-end;
-    left: -71px;
+    /* left: -71px; */
     /* top: 1px; */
 }
-
+.recharts-cartesian-axis{
+    display: none;
+}

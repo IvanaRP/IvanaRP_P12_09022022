@@ -6,7 +6,10 @@
   margin-right: 20px;
   box-shadow: 0px 2px 4px 0px #00000025;
 }
-
+/* .radar{
+  background-color: blue;
+  width: 30px;
+} */
 /* .recharts-surface {
     color: white;
   display: flex;
@@ -42,3 +45,4 @@
 .recharts-layer{
     color: white;
 } */
+

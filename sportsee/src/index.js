@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
 import Profil from "./pages/Profil";
-import Settings from "./pages/Settings";
+import PassParam from "./pages/Profil/parFetch";
 
 import Header from "./components/Header";
 
@@ -19,7 +19,8 @@ ReactDOM.render(
 
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/profil" element={<Profil/>}/>
-          <Route exact path="/settings" element={<Settings/>}/>
+          <Route exact path="/settings" element={<PassParam/>}/>
+          
           <Route path="*" element={<Error/>}/>
    
       </Routes>
