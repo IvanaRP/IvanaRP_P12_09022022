@@ -9,7 +9,7 @@ import GraphCard from "../../components/GraphCard"
 import dataUsers from "../../datas/USER_MAIN_DATA";
 import "../../styles/profil.css";
 
-import { useFetchApi } from '../Settings/useFetchApi'
+// import { useFetchApi } from '../Settings/useFetchApi'
 
 
 console.log(dataUsers);
@@ -17,9 +17,9 @@ console.log(dataUsers);
 
 
 
-function Profil({idUser}) {
+function Profil() {
 
-  const { dataAverage } = useFetchApi(idUser, '')
+  // const { dataAverage } = useFetchApi(idUser, '')
 
   return (
     <div className="profilWrapper">
@@ -27,7 +27,7 @@ function Profil({idUser}) {
       <div className="profilContainer">
               <div className="profilUser">
                       <h1>
-                        Bonjour <span className="userName">{dataAverage}</span>
+                        Bonjour <span className="userName">username</span>
                         </h1>
                         <p>Félicitation! Vous avez explosé vos objectifs hier 👏 </p>
               </div>

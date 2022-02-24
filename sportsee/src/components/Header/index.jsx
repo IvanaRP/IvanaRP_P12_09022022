@@ -23,6 +23,9 @@ function Header() {
         <Link to="/community" className="header-link">
           Communaute
         </Link>
+        <Link to="/componentapi" className="header-link">
+          API
+        </Link>
       </nav>
     </div>
   );
