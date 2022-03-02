@@ -13,11 +13,21 @@
   .graphContainer{
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-between;   
   }
 
+.graphicsAll{
+    display: flex;
+    flex-direction: row;
+}
+  .graphicsContainer{
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+  }
 .graphWrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 20px;
 }  

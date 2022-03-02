@@ -1,48 +1,8 @@
-.radarWrapper {
-  background: #282d30;
-  border-radius: 5px;
+.RadarContainer {
   width: 258px;
   height: 263px;
-  margin-right: 20px;
-  box-shadow: 0px 2px 4px 0px #00000025;
-}
-/* .radar{
-  background-color: blue;
-  width: 30px;
-} */
-/* .recharts-surface {
-    color: white;
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 50%;
-} */
-/* 
-.recharts-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  background: #282d30;
+  position: relative;
+  background-color: black;
   border-radius: 5px;
-  width: 258px;
-  height: 263px;
-  margin: 20px;
+  margin-right: 5px;
 }
-
-.recharts-polar-grid {
-  width: 90%;
-}
-.recharts-polar-grid-angle {
-  display: none;
-}
-.recharts-text recharts-polar-angle-axis-tick-value {
-  color: white;
-}
-.recharts-polar-angle-axis-tick-value {
-  color: white;
-}
-.recharts-layer{
-    color: white;
-} */
-
