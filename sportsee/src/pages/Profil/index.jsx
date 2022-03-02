@@ -35,6 +35,8 @@ function Profil() {
 
   // constant user and activity
   const [user, setUser] = useState({});
+  const [userActivity, setUserActivity] = useState({});
+  console.log(userActivity);
   console.log(user);
 
   // useEffect
@@ -43,6 +45,7 @@ function Profil() {
   function getAllData() {
     const datas = new FetchData();
     datas.getInfo(userId).then((data) => setUser(data));
+    datas.getActivity(userId).then((data) => setUserActivity(data));
   }
 
   return (

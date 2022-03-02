@@ -14,11 +14,22 @@ class User {
   }
 }
 
+// make class for USER_ACTIVITY
+class Activity {
+    userId;
+    sessions;
+  
+    constructor(data) {
+      this.userId = data.userId;
+      this.sessions = data.sessions;
+    }
+  }
+
 // fetch mocked DATA for user
 
 export default class FetchData {
 
-
+// user
   async getInfo(userId) {
     try {
       //MOCKED DATA
@@ -31,4 +42,24 @@ export default class FetchData {
       console.error(error);
     }
   }
+
+
+  // user
+  async getActivity(userId) {
+    try {
+      //MOCKED DATA
+      const response = await fetch("../data/" + userId + "/USER_ACTIVITY.json");
+      //API DATA
+    //   const response = await fetch("http://localhost:3000/user/"+ userId +"/activity");
+      const data = await response.json();
+      return new Activity(data.data);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+
+
+
+
 }
