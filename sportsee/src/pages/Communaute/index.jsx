@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import NavLeft from "../../components/NavigationLeft";
 
+
+import "../../styles/profil.css";
+
 function Communaute() {
   return (
     <div className="profilWrapper">

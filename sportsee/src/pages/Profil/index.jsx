@@ -6,7 +6,7 @@ import NavLeft from "../../components/NavigationLeft";
 // import GraphCard from "../../components/GraphCard"
 // import useFetchApi  from "../../utils/useFetchApi/useFetchApi";
 
-
+import "../../styles/profil.css";
 
 function Profil() {
 
