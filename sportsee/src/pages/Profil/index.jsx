@@ -8,8 +8,17 @@ import NavLeft from "../../components/NavigationLeft";
 
 import "../../styles/profil.css";
 
-function Profil() {
+// import DATA from fetch
+// import FetchData  from "../../fetchData/fetchData";
+// import useParams to match the parameter from home page
+import { useParams } from "react-router-dom";
 
+
+function Profil() {
+  const param = useParams();
+  const userId = param.id;
+
+console.log(userId);
 
   return (
     <div className="profilWrapper">
