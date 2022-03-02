@@ -9,10 +9,14 @@ import ProteinesIcon from "../../assets/protein-icon.svg";
 import CarbIcon from "../../assets/carbs-icon.svg";
 import FatIcon from "../../assets/fat-icon.svg";
 
+
+// import GRAPHS as component
+import GraphKpiScore from "../../components/GraphsRecharcts/KPIScore";
+
 // import GraphPoids from "../../components/GraphPoids";
 // import GraphObjectif from "../../components/Objectif";
 // import GraphRadar from "../../components/Radar";
-// import GraphKpi from "../../components/KPI";
+
 // import GraphCard from "../../components/GraphCard"
 
 import "../../styles/profil.css";
@@ -52,6 +56,7 @@ function Profil() {
           </h1>
           <p>Félicitation! Vous avez explosé vos objectifs hier 👏 </p>
         </div>
+        <GraphKpiScore data={user?.todayScore}/>
         <div className="keyDataWrapper">
           <KeyData
             image={CaloriesIcon}

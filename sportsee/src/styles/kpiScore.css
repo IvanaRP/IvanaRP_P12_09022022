@@ -1,0 +1,36 @@
+
+  .kpiWrapper {
+    width: 258px;
+    height: 263px;
+    position: relative;
+    background-color: #fbfbfb;
+    border-radius: 5px;
+  }
+  .ScoreTitle {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #20253a;
+  }
+  .ScoreLegend {
+    color: #282d30;
+    font-size: 0.8rem;
+    font-weight: 500;
+    position: absolute;
+    left: 40%;
+    bottom: 40%;
+  }
+  .ScoreLegend p {
+    margin: 0;
+    text-align: center;
+  }
+  .renderLabel {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .recharts-pie-sector{
+    color: #282d30;
+  }
