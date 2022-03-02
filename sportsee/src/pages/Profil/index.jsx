@@ -1,10 +1,19 @@
+// nabvigation left
 import NavLeft from "../../components/NavigationLeft";
+
+// import keydata
+import KeyData from "../../components/KeyData";
+// import img for keydata
+import CaloriesIcon from "../../assets/calories-icon.svg";
+import ProteinesIcon from "../../assets/protein-icon.svg";
+import CarbIcon from "../../assets/carbs-icon.svg";
+import FatIcon from "../../assets/fat-icon.svg";
+
 // import GraphPoids from "../../components/GraphPoids";
 // import GraphObjectif from "../../components/Objectif";
 // import GraphRadar from "../../components/Radar";
 // import GraphKpi from "../../components/KPI";
 // import GraphCard from "../../components/GraphCard"
-// import useFetchApi  from "../../utils/useFetchApi/useFetchApi";
 
 import "../../styles/profil.css";
 
@@ -32,17 +41,38 @@ function Profil() {
     datas.getInfo(userId).then((data) => setUser(data));
   }
 
-
-
   return (
     <div className="profilWrapper">
       <NavLeft />
       <div className="profilContainer">
         <div className="profilUser">
           <h1>
-            Bonjour <span className="userName">{user?.userInfos?.firstName}</span>
+            Bonjour{" "}
+            <span className="userName">{user?.userInfos?.firstName}</span>
           </h1>
           <p>Félicitation! Vous avez explosé vos objectifs hier 👏 </p>
+        </div>
+        <div className="keyDataWrapper">
+          <KeyData
+            image={CaloriesIcon}
+            title="Calories" value={user?.keyData?.calorieCount}
+            unit="kCal"
+          />
+             <KeyData
+            image={ProteinesIcon}
+            title="Proteines" value={user?.keyData?.proteinCount}
+            unit="g"
+          />
+             <KeyData
+            image={CarbIcon}
+            title="Glucides" value={user?.keyData?.carbohydrateCount}
+            unit="g"
+          />
+             <KeyData
+            image={FatIcon}
+            title="Lipides" value={user?.keyData?.lipidCount}
+            unit="g"
+          />
         </div>
       </div>
     </div>
