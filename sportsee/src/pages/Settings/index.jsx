@@ -1,28 +1,22 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import NavLeft from "../../components/NavigationLeft";
 
-import jsonData from "../../datas/data";
 
-import useFetch from "../../Util/customHook/useFetch";
-
-const  Settings = () => {
-  const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");
-  // const [data] = useFetch("http://localhost:3000/user/12");
-
-  console.log(jsonData);
-  console.log([data])
+function Settings() {
   return (
-    <>
-      {data &&
-        data.map((item) => {
-          return <p key={item.id}>{item.title} {item.userId}{item.completed}</p>;
-        })}
-    </>
+    <div className="profilWrapper">
+    <NavLeft />
+    <div className="profilContainer">
+      <div className="profilUser">
+        <h1>page en construction</h1>
+        <Link to="/" className="home-link">
+          Retourner sur la page d’accueil!
+        </Link>
+      </div>
+    </div>
+  </div>
   );
-};
+}
 
-export default  Settings;
-
-
-
-
-
-
+export default Settings;

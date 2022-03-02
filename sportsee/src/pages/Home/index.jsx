@@ -1,109 +1,29 @@
-// import NavLeft from "../../components/NavigationLeft";
-// import { Link } from "react-router-dom";
-
-// // import   PassParam from "../Profil/parFetch";
-
-// import "../../styles/home.css";
-// // import MyComponent from "../../utils/useFetchApi/useFetchId";
-
-// console.log(PassParam);
-
-// function Home() {
-
-//   const { data,  error } = PassParam
-
-//   const idUser = data?.idUser 
-
-//   if (error) {
-//       return <span>Oups il y a eu un problème</span>
-//   }  
-
-//   return (
-
-//     <div className="homeWrapper">
-//         <div className="homeContainer">
-//           <NavLeft  idUser={idUser}     />
-//           <div className="brandContainer">
-//           {/* <h1>Bienvenue sur SportSee!</h1>
-//               <h2>Bonjour, sélectionnez un profil!</h2>
-//               { isLoading  ? (
-//                       <div>Chargement en cours...</div>
-//               ) : (    
-//                   <div className="cardWrapper">                 */}
-//                       {/* {users && users.map((user, index)=>                        
-//                           <div className="cardUser">
-//                               <div>
-//                                   <Link key={`${user.id}-${index}`} to={`/Profile/${user.id}`} className="linkUser">
-                                                                  
-//                                   </Link> 
-//                                   <h2>{user.firstName} {user.lastName}</h2>
-//                               </div>                                
-//                           </div>
-//                       )} */}
-//                   {/* </div>                    
-//               )} */}
-//           </div>
-//         </div>
-//     </div>
-//   )
-// }
-
-
-
-
 import NavLeft from "../../components/NavigationLeft";
 import { Link } from "react-router-dom";
-import ManIcon from "../../assets/man_icon.svg";
-import WomanIcon from "../../assets/woman_icon.svg";
-// import { useFetch } from '../../Util/hooks/useFetch'
-import dataUsers from "../../datas/home.json";
+// import ManIcon from "../../assets/man_icon.svg";
+// import WomanIcon from "../../assets/woman_icon.svg";
 
 import "../../styles/home.css";
-// import MyComponent from "../../utils/useFetchApi/useFetchId";
-
-// console.log(MyComponent);
 
 function Home() {
-
-  const { data, isLoading, error } = dataUsers
-
-  const users = data?.users 
-
-  if (error) {
-      return <span>Oups il y a eu un problème</span>
-  }  
-
   return (
-
     <div className="homeWrapper">
-        <div className="homeContainer">
-          <NavLeft />
-          <div className="brandContainer">
+      <div className="homeContainer">
+        <NavLeft />
+        <div className="brandContainer">
           <h1>Bienvenue sur SportSee!</h1>
-              <h2>Bonjour, sélectionnez un profil!</h2>
-              { isLoading  ? (
-                      <div>Chargement en cours...</div>
-              ) : (    
-                  <div className="cardWrapper">                
-                      {users && users.map((user, index)=>                        
-                          <div className="cardUser">
-                              <div>
-                                  <Link key={`${user.id}-${index}`} to={`/Profile/${user.id}`} className="linkUser">
-                                      <img src={user.gender==="W" ? WomanIcon : ManIcon } alt="Profil avatar" />                                   
-                                  </Link> 
-                                  <h2>{user.firstName} {user.lastName}</h2>
-                              </div>                                
-                          </div>
-                      )}
-                  </div>                    
-              )}
-          </div>
+          <h2>Choisi votre profil</h2>
+          <Link className="btn" to="/user/12">
+            <div>Profil 12</div>
+          </Link>
+          <Link className="btn" to="/user/18">
+            <div>Profil 18</div>
+          </Link>
         </div>
+      </div>
     </div>
-  )
+  );
 }
-
-
 
 // function Home() {
 //   return (

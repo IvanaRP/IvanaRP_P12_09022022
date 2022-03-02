@@ -14,7 +14,7 @@ function Header() {
         <Link to="/" className="header-link">
           Accueil
         </Link>
-        <Link to="/profil" className="header-link">
+        <Link to="/user/:id" className="header-link">
           Profil
         </Link>
         <Link to="/settings" className="header-link">
@@ -22,9 +22,6 @@ function Header() {
         </Link>
         <Link to="/community" className="header-link">
           Communaute
-        </Link>
-        <Link to="/componentapi" className="header-link">
-          API
         </Link>
       </nav>
     </div>
