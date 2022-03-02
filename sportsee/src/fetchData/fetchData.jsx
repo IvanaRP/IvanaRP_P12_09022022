@@ -36,6 +36,23 @@ class AverageSessions {
     }
   }
 
+// make class for USER_PERFORMANCE
+  class Performance {
+    userId;
+    kind;
+    data;
+  
+    constructor(data) {
+      this.userId = data.userId;
+      this.kind = data.kind;
+      this.data = data.data.map((entry) => ({
+        value: entry.value,
+        kind: this.kind[entry.kind],
+      }));
+      this.data = this.data.reverse();
+    }
+  }
+
 
 // fetch mocked DATA for user
 
@@ -86,7 +103,19 @@ export default class FetchData {
       }
 
 
-
+ // userAVERAGE_SESSIONS
+ async getPerformance(userId) {
+    try {
+      //MOCKED DATA
+    //   const response = await fetch("../data/" + userId + "/USER_PERFORMANCE.json");
+      //API DATA
+      const response = await fetch("http://localhost:3000/user/"+ userId +"/performance");
+      const data = await response.json();
+      return new Performance(data.data);
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
 
 }

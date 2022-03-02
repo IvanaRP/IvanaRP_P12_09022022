@@ -13,13 +13,14 @@ import FatIcon from "../../assets/fat-icon.svg";
 // import GRAPHS as component
 import GraphKpiScore from "../../components/GraphsRecharcts/KPIScore";
 import GraphPoids from "../../components/GraphsRecharcts/GraphPoids";
-import GraphRadar from "../../components/GraphsRecharcts/Radar";
+import GraphObjectif from "../../components/GraphsRecharcts/Objectif"
+// import GraphRadar from "../../components/GraphsRecharcts/Radar";
 
 
 // import GraphObjectif from "../../components/Objectif";
 
 
-// import GraphCard from "../../components/GraphCard"
+
 
 import "../../styles/profil.css";
 
@@ -39,20 +40,23 @@ function Profil() {
   const [user, setUser] = useState({});
   const [userActivity, setUserActivity] = useState({});
   const [userAverageSessions, setUserAverageSessions] = useState({});
+  const [userPerformance, setUserPerformance] = useState({});
   
   console.log(user);
   console.log(userActivity);
   console.log(userAverageSessions);
+  console.log(userPerformance);
 
   // useEffect
   useEffect(getAllData, [userId]);
-  
+
   // get data form api
   function getAllData() {
     const datas = new FetchData();
     datas.getInfo(userId).then((data) => setUser(data));
     datas.getActivity(userId).then((data) => setUserActivity(data));
     datas.getAverageSessions(userId).then((data) => setUserAverageSessions(data));
+    datas.getPerformance(userId).then((data) => setUserPerformance(data));
   }
 
   return (
@@ -67,8 +71,9 @@ function Profil() {
           <p>Félicitation! Vous avez explosé vos objectifs hier 👏 </p>
         </div>
         <GraphPoids data={userActivity?.sessions}/>
+        
+        <GraphObjectif data={userAverageSessions} />
         <GraphKpiScore data={user?.todayScore}/>
-        <GraphRadar />
         <div className="keyDataWrapper">
           <KeyData
             image={CaloriesIcon}
