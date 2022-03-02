@@ -59,7 +59,7 @@ function Profil() {
           </h1>
           <p>Félicitation! Vous avez explosé vos objectifs hier 👏 </p>
         </div>
-        <GraphPoids/>
+        <GraphPoids data={userActivity?.sessions}/>
         <GraphKpiScore data={user?.todayScore}/>
         <div className="keyDataWrapper">
           <KeyData
