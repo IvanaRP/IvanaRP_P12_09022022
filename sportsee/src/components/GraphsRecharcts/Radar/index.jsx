@@ -7,7 +7,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-import "../../styles/radar.css";
+import "../../../styles/radar.css";
 
 const data = [
   {

@@ -13,9 +13,11 @@ import FatIcon from "../../assets/fat-icon.svg";
 // import GRAPHS as component
 import GraphKpiScore from "../../components/GraphsRecharcts/KPIScore";
 import GraphPoids from "../../components/GraphsRecharcts/GraphPoids";
+import GraphRadar from "../../components/GraphsRecharcts/Radar";
+
 
 // import GraphObjectif from "../../components/Objectif";
-// import GraphRadar from "../../components/Radar";
+
 
 // import GraphCard from "../../components/GraphCard"
 
@@ -36,16 +38,21 @@ function Profil() {
   // constant user and activity
   const [user, setUser] = useState({});
   const [userActivity, setUserActivity] = useState({});
-  console.log(userActivity);
+  const [userAverageSessions, setUserAverageSessions] = useState({});
+  
   console.log(user);
+  console.log(userActivity);
+  console.log(userAverageSessions);
 
   // useEffect
   useEffect(getAllData, [userId]);
+  
   // get data form api
   function getAllData() {
     const datas = new FetchData();
     datas.getInfo(userId).then((data) => setUser(data));
     datas.getActivity(userId).then((data) => setUserActivity(data));
+    datas.getAverageSessions(userId).then((data) => setUserAverageSessions(data));
   }
 
   return (
@@ -61,6 +68,7 @@ function Profil() {
         </div>
         <GraphPoids data={userActivity?.sessions}/>
         <GraphKpiScore data={user?.todayScore}/>
+        <GraphRadar />
         <div className="keyDataWrapper">
           <KeyData
             image={CaloriesIcon}
