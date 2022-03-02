@@ -12,9 +12,9 @@ a:link {
     align-items: center;
     flex-direction: column;
     width: 10%;
-    height: 100vh;
+    /* height: 100vh; */
     background: #020203;
-    box-shadow: 0px 4px 4px 0px #00000040;
+  
 }
 
 

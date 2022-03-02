@@ -49,7 +49,7 @@ export default function GraphPoids({ data }) {
             </div>
           </div>
         </div>
-        <ResponsiveContainer width="100%" height={300}>
+        <ResponsiveContainer >
           <BarChart
             data={data}
             margin={{

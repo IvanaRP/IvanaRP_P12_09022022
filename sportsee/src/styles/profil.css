@@ -2,13 +2,14 @@
     display: flex;
     flex-direction: row;
 }
-.profilUser {
+/* .profilUser {
     padding: 20px;
-  }
+  } */
 .profilContainer{
     display: flex;
     flex-direction: column;
     padding: 20px;
+    height: fit-content;
 }
   .graphContainer{
       display: flex;
@@ -31,3 +32,12 @@
     justify-content: space-around;
     margin-top: 20px;
 }  
+.userName{
+    color: #e60000;
+}
+
+.keyDataWrapper{
+    display: flex;
+    flex-direction: column;
+    
+}
