@@ -12,8 +12,8 @@ import FatIcon from "../../assets/fat-icon.svg";
 
 // import GRAPHS as component
 import GraphKpiScore from "../../components/GraphsRecharcts/KPIScore";
+import GraphPoids from "../../components/GraphsRecharcts/GraphPoids";
 
-// import GraphPoids from "../../components/GraphPoids";
 // import GraphObjectif from "../../components/Objectif";
 // import GraphRadar from "../../components/Radar";
 
@@ -59,6 +59,7 @@ function Profil() {
           </h1>
           <p>Félicitation! Vous avez explosé vos objectifs hier 👏 </p>
         </div>
+        <GraphPoids/>
         <GraphKpiScore data={user?.todayScore}/>
         <div className="keyDataWrapper">
           <KeyData

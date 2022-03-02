@@ -3,7 +3,7 @@ import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 
-import "../../styles/barChartPoids.css";
+import "../../../styles/barChartPoids.css";
 
 
 
@@ -79,18 +79,3 @@ export default function GraphPoids() {
 
 
 
-
-// import Poids from "../../assets/poids.svg";
-
-
-// function GraphPoids() {
-//     return (
-//       <div className="homeWrapper">
-//       <div>
-//                         <img src={Poids} alt="SportSee"/>
-//                       </div>
-//       </div>
-//     );
-//   }
-  
-//   export default GraphPoids;
