@@ -10,7 +10,7 @@ function KeyData({ image, title, value, unit }) {
       <div className="keyDataBoxes">
       <img src={image} alt={title} />
       <div className="keyDataText">
-        <div>
+        <div className="keyDataTextValue">
           {value}
           {unit}
         </div>

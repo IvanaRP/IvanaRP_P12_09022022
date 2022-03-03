@@ -93,9 +93,9 @@ export default class FetchData {
     async getAverageSessions(userId) {
         try {
           //MOCKED DATA
-        //   const response = await fetch("../data/" + userId + "/USER_AVERAGE_SESSIONS.json");
+          const response = await fetch("../data/" + userId + "/USER_AVERAGE_SESSIONS.json");
           //API DATA
-          const response = await fetch("http://localhost:3000/user/"+ userId +"/average-sessions");
+          // const response = await fetch("http://localhost:3000/user/"+ userId +"/average-sessions");
           const data = await response.json();
           return new AverageSessions(data.data);
         } catch (error) {
@@ -108,9 +108,9 @@ export default class FetchData {
  async getPerformance(userId) {
     try {
       //MOCKED DATA
-    //   const response = await fetch("../data/" + userId + "/USER_PERFORMANCE.json");
+      const response = await fetch("../data/" + userId + "/USER_PERFORMANCE.json");
       //API DATA
-      const response = await fetch("http://localhost:3000/user/"+ userId +"/performance");
+      // const response = await fetch("http://localhost:3000/user/"+ userId +"/performance");
       const data = await response.json();
       return new Performance(data.data);
     } catch (error) {
