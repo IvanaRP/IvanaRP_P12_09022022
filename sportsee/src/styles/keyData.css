@@ -1,14 +1,25 @@
 .keyDataContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   background: #fbfbfb;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
   border-radius: 5px;
-  padding-right: 30px;
-  padding-top: 5px;
-  padding-left: 5px;
+  padding-right: 50px;
+  padding-top:20px;
+  padding-left: 20px;
 }
 
 
 .keyDataBoxes{
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+}
+
+.keyDataText{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
 }

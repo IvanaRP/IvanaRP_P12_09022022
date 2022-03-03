@@ -1,3 +1,7 @@
+.homeWrapper{
+  display:inline-block;
+}
+
 .homeContainer {
   display: flex;
   flex-direction: row;

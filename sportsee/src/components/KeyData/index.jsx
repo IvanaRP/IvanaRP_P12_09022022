@@ -9,7 +9,7 @@ function KeyData({ image, title, value, unit }) {
     <div className="keyDataContainer">
       <div className="keyDataBoxes">
       <img src={image} alt={title} />
-      <div className="textCount">
+      <div className="keyDataText">
         <div>
           {value}
           {unit}

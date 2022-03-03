@@ -12,7 +12,7 @@ a:link {
     align-items: center;
     flex-direction: column;
     width: 10%;
-    /* height: 100vh; */
+    height: 100vh;
     background: #020203;
   
 }
