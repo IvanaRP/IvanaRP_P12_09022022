@@ -1,3 +1,4 @@
+
 // make class for user
 
 class User {
@@ -119,3 +120,5 @@ export default class FetchData {
 
 
 }
+
+
