@@ -1,16 +1,27 @@
 .homeWrapper{
   display:inline-block;
+
 }
 
 .homeContainer {
   display: flex;
   flex-direction: row;
+
 }
 
 .brandContainer {
   padding: 20px;
+  position: absolute;
+  top: 9%;
+  left: 10%;
+  bottom: 0;
+  width: 90%;
 }
-
+.brandText{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .manIcon {
   height: 50px;
   border-style: solid;

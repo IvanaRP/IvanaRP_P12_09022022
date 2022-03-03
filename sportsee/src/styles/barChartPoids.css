@@ -1,10 +1,9 @@
 .WeightContainer {
   width:100%;
-  height: 250px;
   background-color: #fbfbfb;
   margin-top: 5px;
   border-radius: 5px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .custom-tooltip {

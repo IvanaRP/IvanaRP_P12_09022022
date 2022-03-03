@@ -69,7 +69,7 @@ export default function GraphObjectif({ data: { sessions } }) {
   };
 
   return (
-    <section className="GoalsContainer">
+    <div className="GoalsContainer">
       <div className="GoalsTitle"> 
        Durée moyenne des
         <br />
@@ -133,6 +133,6 @@ export default function GraphObjectif({ data: { sessions } }) {
           <div>D</div>
         </div>
     
-    </section>
+    </div>
   );
 }

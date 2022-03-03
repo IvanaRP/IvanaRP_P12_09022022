@@ -49,16 +49,16 @@ export default function GraphPoids({ data }) {
             </div>
           </div>
         </div>
-        <ResponsiveContainer >
+        <ResponsiveContainer width="100%" height={320}>
           <BarChart
             data={data}
             margin={{
               top: 30,
               right: 50,
-              left: 20,
-              bottom: 10,
+              left: 30,
+              bottom: 30,
             }}
-            barCategoryGap="35%"
+            barCategoryGap="25%"
             barGap={2}
           >
             <CartesianGrid

@@ -2,20 +2,34 @@
 
 .errorWrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #ff6060;
+  flex-direction: row;
+justify-content: flex-start;
 }
 
-.error404{
-    font-size: 200px;
+.errorContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 200px;
 }
-.error-message{
-    font-weight: 400;
+
+.errorUser {
+  font-family: Roboto;
+  color: #e60000;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 900;
+  font-style: normal;
+}
+.error404 {
+  font-size: 200px;
+}
+.error-message {
+  font-weight: 400;
 }
 
 .home-link {
-    text-decoration:none;
-    color: #ff6060;
-    border-bottom: #ff6060;;
+  text-decoration: none;
+  color: #e60000;
+  border-bottom: #e60000;
 }

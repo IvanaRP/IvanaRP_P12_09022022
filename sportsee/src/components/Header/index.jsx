@@ -14,7 +14,7 @@ function Header() {
         <Link to="/" className="header-link">
           Accueil
         </Link>
-        <Link to="/user" className="header-link">
+        <Link to="/" className="header-link">
           Profil
         </Link>
         <Link to="/settings" className="header-link">

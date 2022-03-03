@@ -8,8 +8,15 @@
 .profilContainer{
     display: flex;
     flex-direction: column;
-    padding: 20px;
     height: fit-content;
+    margin-top: 30px;
+    margin-left: 50px;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 9%;
+    left: 10%;
+    bottom: 0;
+    width: 90%;
 }
   .graphContainer{
       display: flex;
@@ -33,7 +40,13 @@
     margin-top: 20px;
 }  
 .userName{
+    font-family: Roboto;
     color: #e60000;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 900;
+    font-style: normal;
+  
 }
 
 .keyDataWrapper{
