@@ -80,7 +80,7 @@ export default class FetchData {
       //MOCKED DATA
       const response = await fetch("../data/" + userId + "/USER_ACTIVITY.json");
       //API DATA
-    //   const response = await fetch("http://localhost:3000/user/"+ userId +"/activity");
+      // const response = await fetch("http://localhost:3000/user/"+ userId +"/activity");
       const data = await response.json();
       return new Activity(data.data);
     } catch (error) {

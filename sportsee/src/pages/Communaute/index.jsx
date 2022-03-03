@@ -11,9 +11,9 @@ function Communaute() {
       <NavLeft />
       <div className="profilContainer">
         <div className="profilUser">
-          <h1>page en construction</h1>
+          <h1>🏗️ Page en construction</h1>
           <Link to="/" className="home-link">
-            Retourner sur la page d’accueil!
+            Retourner sur la page d’accueil !
           </Link>
         </div>
       </div>
