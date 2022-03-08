@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   BarChart,
   Bar,
@@ -26,7 +25,7 @@ const CustomTooltip = ({ active, payload }) => {
   return null;
 };
 
-export default function GraphPoids({ data }) {
+export default function GraphPoids( { data } ) {
 
   const formatXAxis = (tickItem) => {
     return tickItem + 1;
