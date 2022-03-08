@@ -1,11 +1,10 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
-
 import "../../../styles/kpiScore.css";
 
 export default function GraphKpiScore({ data }) {
-  // const data01 = [{ name: "Group A", value: 100 }];
+ 
   const todayScore = data;
   const scorePerCent = todayScore * 100;
   const rest = 100 - scorePerCent;
@@ -14,21 +13,22 @@ export default function GraphKpiScore({ data }) {
     { name: "notdone", value: rest, fillColor: "#ffffff" },
   ];
   const renderLabel = score[0].value + "%";
-  console.log(renderLabel);
+  // console.log(renderLabel);
+  const data01 = [{ name: "A", value: 100 }];
 
   return (
     <div className="kpiWrapper">
       <div className="ScoreTitle">Score</div>
       <ResponsiveContainer width="100%" height="100%">
         <PieChart width={400} height={400}>
-          {/* <Pie
-            dataKey="value"
+        <Pie
             data={data01}
+            dataKey="value"
             innerRadius={0}
             outerRadius={80}
-            fill="#58C22A"
+            fill="white"
             stroke="none"
-          /> */}
+          />
           <Pie
             dataKey="value"
             data={score}
@@ -58,3 +58,7 @@ export default function GraphKpiScore({ data }) {
     </div>
   );
 }
+
+GraphKpiScore.propTypes = {
+  data:PropTypes.number,
+};

@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   BarChart,
   Bar,
@@ -111,3 +112,4 @@ export default function GraphPoids({ data }) {
     </div>
   );
 }
+

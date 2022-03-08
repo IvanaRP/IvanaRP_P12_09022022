@@ -1,4 +1,4 @@
-// nabvigation left
+//nabvigation left
 import NavLeft from "../../components/NavigationLeft";
 
 // import keydata
@@ -27,7 +27,7 @@ import { useEffect, useState } from "react";
 function Profil() {
   const param = useParams();
   const userId = param.id;
-  console.log(userId);
+  // console.log(userId);
 
   // constant user and activity
   const [user, setUser] = useState({});
@@ -35,10 +35,10 @@ function Profil() {
   const [userAverageSessions, setUserAverageSessions] = useState({});
   const [userPerformance, setUserPerformance] = useState({});
 
-  console.log(user);
-  console.log(userActivity);
-  console.log(userAverageSessions);
-  console.log(userPerformance);
+  // console.log(user);
+  // console.log(userActivity);
+  // console.log(userAverageSessions);
+  // console.log(userPerformance);
 
   // useEffect
   useEffect(getAllData, [userId]);
@@ -75,7 +75,7 @@ function Profil() {
             </div>
           </div>
 
-          <div className="keyDataWrapper">
+           <div className="keyDataWrapper">
             <KeyData
               image={CaloriesIcon}
               title="Calories"
@@ -100,7 +100,7 @@ function Profil() {
               value={user?.keyData?.lipidCount}
               unit="g"
             />
-          </div>
+          </div> 
         </div>
       </div>
     </div>

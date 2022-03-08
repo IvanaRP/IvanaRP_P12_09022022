@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import {
   Radar,
   RadarChart,
@@ -9,40 +10,8 @@ import {
 
 import "../../../styles/radar.css";
 
-// const data = [
-//   {
-//     subject: "intensity",
-//     value: 90,
-//     kind: 6,
-//   },
-//   {
-//     subject: "speed",
-//     value: 200,
-//     kind: 5,
-//   },
-//   {
-//     subject: "strength",
-//     value: 50,
-//     kind: 4,
-//   },
-//   {
-//     subject: "endurance",
-//     value: 120,
-//     kind: 2,
-//   },
-//   {
-//     subject: "energy",
-//     value: 80,
-//     kind: 1,
-//   },
-//   {
-//     subject: "cardio",
-//     value: 200,
-//     kind: 1,
-//   },
-// ];
 
-export default function GraphPerformance({data:{data}}) {
+export default function GraphPerformance( { data: {data} } ) {
 
   const formatActivity = (kind) => {
     let activitiInFrench;
@@ -109,3 +78,7 @@ export default function GraphPerformance({data:{data}}) {
     </div>
   );
 }
+
+GraphPerformance.propTypes = {
+  data: PropTypes.object.isRequired,
+};
