@@ -3,6 +3,11 @@ import PropTypes from "prop-types";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import "../../../styles/kpiScore.css";
 
+/**
+ * This function display the GraphKpiScores PieChart 
+ * @returns the component recharts PieChart
+ */
+
 export default function GraphKpiScore({ data }) {
  
   const todayScore = data;

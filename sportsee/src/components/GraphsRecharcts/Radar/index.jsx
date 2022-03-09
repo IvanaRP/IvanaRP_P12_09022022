@@ -4,6 +4,11 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } fro
 
 import "../../../styles/radar.css";
 
+/**
+ * This function display the GraphPerformance RadarChart
+ * @returns the component recharts RadarChart
+ */
+
 
 export default function GraphPerformance({ data: { data } }) {
 

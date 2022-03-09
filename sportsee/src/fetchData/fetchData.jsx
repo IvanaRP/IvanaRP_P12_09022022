@@ -88,6 +88,7 @@ export default class FetchData {
    * @param {number} userId id of the user
    * @returns A promise with the Activity of this user
    */
+
   // userACTIVITY
   async getActivity(userId) {
     try {
@@ -107,6 +108,7 @@ export default class FetchData {
    * @param {number} userId id of the user
    * @returns  A promise with the Session of this user
    */
+
   // userAVERAGE_SESSIONS
     async getAverageSessions(userId) {
         try {
@@ -123,11 +125,12 @@ export default class FetchData {
 
 
 
-    /**
+   /**
    * @description gets the user performance data (depends on userID)
    * @param {number} userId id of the user
    * @returns A promise with the Performance of this user
    */  
+
  // userAVERAGE_SESSIONS
  async getPerformance(userId) {
     try {

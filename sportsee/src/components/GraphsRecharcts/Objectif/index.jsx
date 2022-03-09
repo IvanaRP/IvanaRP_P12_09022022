@@ -12,6 +12,12 @@ import {
 import "../../../styles/objectif.css";
 
 
+/**
+ * This function display the GraphObjectif LineChart 
+ * @returns the component recharts LineChart
+ */
+
+
 export default function GraphObjectif({ data: { sessions } }) {
   const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {

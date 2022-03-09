@@ -24,7 +24,10 @@ import { useParams } from "react-router-dom";
 // import useEffect and useState
 import { useEffect, useState } from "react";
 
-
+/**
+ * This component function -Profil- display the information of the user 
+ * @returns The graphics and key datas of the user define by the param's link (useParams)
+ */
 
 
 function Profil() {
@@ -43,8 +46,17 @@ function Profil() {
   // console.log(userAverageSessions);
   // console.log(userPerformance);
 
+
+
   // useEffect
   useEffect(getAllData, [userId]);
+
+
+
+
+   /**
+   * @description This function gets all the data from mocked data or API
+   */
 
   // get data form api
   function getAllData() {

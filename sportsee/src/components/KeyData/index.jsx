@@ -5,8 +5,7 @@ import "../../styles/keyData.css";
 
 /**
  * This function display the different keys data of the user's profile
- * @param 
- * @returns 
+ * @returns the component KeyData
  */
 
 
