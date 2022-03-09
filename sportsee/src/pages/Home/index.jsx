@@ -4,6 +4,14 @@ import HeaderLogo from "../../assets/logo.svg";
 
 import "../../styles/home.css";
 
+/**
+ * This Function display a temporary user profile selection for testing the profil's page and the API calls
+ * A  selection with 2 choices 
+ * And redirecting to the right user profil's page
+ * It also display a Left Navigation <NavLeft />
+ */
+
+
 function Home() {
   return (
     <div className="homeWrapper">

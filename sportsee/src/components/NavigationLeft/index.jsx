@@ -7,6 +7,13 @@ import GymIcon from "../../assets/gym_icon.svg";
 
 import "../../styles/navigationLeft.css";
 
+/**
+ * This function display the left navigation
+ * @returns The different part of the navigation: 
+ * - the component Navigation for displaying the different navigation's link / that are in constructuon
+ * - the Copyright, SportSee 2020
+ */
+
 
 function NavLeft() {
   return (

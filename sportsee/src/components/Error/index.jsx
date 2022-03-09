@@ -2,7 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/error.css";
 
-import NavLeft from "../../components/NavigationLeft";
+import NavLeft from "../NavigationLeft";
+
+/**
+ * PAGE COMPONENT : This component function display a 404 error message
+ * An 404 error, with a text error and a go back link
+ */
+
 
 function Error() {
   return (

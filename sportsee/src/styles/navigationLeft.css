@@ -36,7 +36,10 @@ a:link {
     transform: rotate(-180deg);
     color: white;
     font-family: Roboto;
+   font-size: 12px;
+   margin: 20px;
+}
 
-font-size: 12px;
-margin: 20px;
+.navLeftIcon{
+   width: 100%;
 }

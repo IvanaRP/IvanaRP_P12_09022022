@@ -1,19 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {
-  Radar,
-  RadarChart,
-  PolarGrid,
-  PolarAngleAxis,
-  ResponsiveContainer,
-} from "recharts";
+import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from "recharts";
 
 import "../../../styles/radar.css";
 
 
-export default function GraphPerformance( { data: {data} } ) {
+export default function GraphPerformance({ data: { data } }) {
 
-  const formatActivity = (kind) => {
+// console.log({data: { data } })
+
+  function formatActivity(kind) {
     let activitiInFrench;
     switch (kind) {
       case "cardio":
@@ -39,9 +35,10 @@ export default function GraphPerformance( { data: {data} } ) {
         break;
     }
     return activitiInFrench;
-  };
+  }
+  
 
-  return (
+  return (<>{data && (
     <div className="RadarContainer">
       <ResponsiveContainer
         className="containerRadar"
@@ -76,7 +73,8 @@ export default function GraphPerformance( { data: {data} } ) {
         </RadarChart>
       </ResponsiveContainer>
     </div>
-  );
+  )}
+  </>);
 }
 
 GraphPerformance.propTypes = {

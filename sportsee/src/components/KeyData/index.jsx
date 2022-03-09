@@ -3,6 +3,13 @@ import PropTypes from "prop-types";
 
 import "../../styles/keyData.css";
 
+/**
+ * This function display the different keys data of the user's profile
+ * @param 
+ * @returns 
+ */
+
+
 function KeyData({ image, title, value, unit }) {
   return (
     <div className="keyDataContainer">
@@ -19,6 +26,7 @@ function KeyData({ image, title, value, unit }) {
     </div>
   );
 }
+
 KeyData.propTypes = {
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,

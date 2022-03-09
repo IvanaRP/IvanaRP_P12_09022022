@@ -1,4 +1,6 @@
-
+/**
+* @description This class has constructor for user, activity, sessions and performance
+*/
 // make class for user
 
 class User {
@@ -56,10 +58,18 @@ class AverageSessions {
 
 
 // fetch mocked DATA for user
+/**
+* @description This class provides methods which fetch datas from mocked data or API
+*/
 
 export default class FetchData {
+ /**
+   * @description gets the user information (depends on userID)
+   * @param {number} userId  id of the user
+   * @returns A promise with the User model object of this user
+   */
 
-// user
+  // user
   async getInfo(userId) {
     try {
       //MOCKED DATA
@@ -73,7 +83,11 @@ export default class FetchData {
     }
   }
 
-
+  /**
+   * @description gets the user activity data (depends on userID)
+   * @param {number} userId id of the user
+   * @returns A promise with the Activity of this user
+   */
   // userACTIVITY
   async getActivity(userId) {
     try {
@@ -88,8 +102,12 @@ export default class FetchData {
     }
   }
 
-
-    // userAVERAGE_SESSIONS
+  /**
+   * @description gets the user average session data (depends on userID)
+   * @param {number} userId id of the user
+   * @returns  A promise with the Session of this user
+   */
+  // userAVERAGE_SESSIONS
     async getAverageSessions(userId) {
         try {
           //MOCKED DATA
@@ -104,6 +122,12 @@ export default class FetchData {
       }
 
 
+
+    /**
+   * @description gets the user performance data (depends on userID)
+   * @param {number} userId id of the user
+   * @returns A promise with the Performance of this user
+   */  
  // userAVERAGE_SESSIONS
  async getPerformance(userId) {
     try {

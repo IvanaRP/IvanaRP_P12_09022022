@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import NavLeft from "../../components/NavigationLeft";
 
+/**
+ * This function display the page in construction
+ * Link towards home page
+ */
 
 function Settings() {
   return (

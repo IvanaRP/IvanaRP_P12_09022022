@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Route_Home, Route_Profil, Route_Settings, Route_Communaute } from "./Utils/router"
 
 import Home from "./pages/Home";
-import Error from "./pages/Error";
+import Error from "./components/Error";
 import Profil from "./pages/Profil";
 import Setting from "./pages/Settings";
 import Communaute from "./pages/Communaute";

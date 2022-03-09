@@ -24,6 +24,9 @@ import { useParams } from "react-router-dom";
 // import useEffect and useState
 import { useEffect, useState } from "react";
 
+
+
+
 function Profil() {
   const param = useParams();
   const userId = param.id;

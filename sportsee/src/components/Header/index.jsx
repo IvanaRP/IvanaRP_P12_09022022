@@ -3,6 +3,12 @@ import HeaderLogo from "../../assets/logo.svg";
 
 import "../../styles/header.css";
 
+/**
+ * This function display the header of the website
+ * @returns The different part of the header : 
+ * - the SportSee logo
+ * - the component Navigation for displaying the different navigation's link
+ */
 
 function Header() {
   return (
