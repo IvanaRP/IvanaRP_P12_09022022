@@ -41,15 +41,15 @@ export default function GraphPoids( { data } ) {
           <div className="WeightCircles">
             <div className="WeightCircle">
               <div className="weight-circle_black"></div>
-              <p>Poids (kg)</p>
+              <p className="weight-text">Poids (kg)</p>
             </div>
             <div className="WeightCircle">
-              <div className=" weight-circle_red"></div>
-              <p>Calories brûlées (kCal)</p>
+              <div className="weight-circle_red"></div>
+              <p className="weight-text">Calories brûlées (kCal)</p>
             </div>
           </div>
         </div>
-        <ResponsiveContainer width="100%" height={320}>
+        <ResponsiveContainer width="100%" height={320} padding={5}>
           <BarChart
             data={data}
             margin={{
