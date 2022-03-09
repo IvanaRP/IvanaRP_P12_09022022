@@ -1,7 +1,3 @@
-[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
-
-
-
 # Project 12 - Openclassrooms
 
 This repo contains all the source code to run the profil'page with the sports analytics dashboard SportSee.
