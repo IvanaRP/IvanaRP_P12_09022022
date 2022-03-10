@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: pages/Profil/index.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: pages/Profil/index.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>//nabvigation left
+import NavLeft from "../../components/NavigationLeft";
+
+// import keydata
+import KeyData from "../../components/KeyData";
+// import img for keydata
+import CaloriesIcon from "../../assets/calories-icon.svg";
+import ProteinesIcon from "../../assets/protein-icon.svg";
+import CarbIcon from "../../assets/carbs-icon.svg";
+import FatIcon from "../../assets/fat-icon.svg";
+
+// import GRAPHS as component
+import GraphKpiScore from "../../components/GraphsRecharcts/KPIScore";
+import GraphPoids from "../../components/GraphsRecharcts/GraphPoids";
+import GraphObjectif from "../../components/GraphsRecharcts/Objectif";
+import GraphPerformance from "../../components/GraphsRecharcts/Radar";
+
+import "../../styles/profil.css";
+
+// import DATA from fetch
+import FetchData from "../../fetchData/fetchData";
+// import useParams to match the parameter from home page
+import { useParams } from "react-router-dom";
+// import useEffect and useState
+import { useEffect, useState } from "react";
+
+/**
+ * This component function -Profil- display the information of the user 
+ * @returns The graphics and key datas of the user define by the param's link (useParams)
+ */
+
+
+function Profil() {
+  const param = useParams();
+  const userId = param.id;
+  // console.log(userId);
+
+  // constant user and activity
+  const [user, setUser] = useState({});
+  const [userActivity, setUserActivity] = useState({});
+  const [userAverageSessions, setUserAverageSessions] = useState({});
+  const [userPerformance, setUserPerformance] = useState({});
+
+  // console.log(user);
+  // console.log(userActivity);
+  // console.log(userAverageSessions);
+  // console.log(userPerformance);
+
+
+
+  // useEffect
+  useEffect(getAllData, [userId]);
+
+
+
+
+   /**
+   * @description This function gets all the data from mocked data or API
+   */
+
+  // get data form api
+  function getAllData() {
+    const datas = new FetchData();
+    datas.getInfo(userId).then((data) => setUser(data));
+    datas.getActivity(userId).then((data) => setUserActivity(data));
+    datas
+      .getAverageSessions(userId)
+      .then((data) => setUserAverageSessions(data));
+    datas.getPerformance(userId).then((data) => setUserPerformance(data));
+  }
+
+  return (
+    &lt;div className="profilWrapper">
+      &lt;NavLeft />
+      &lt;div className="profilContainer">
+        &lt;div className="profilUser">
+          &lt;h1>
+            Bonjour{" "}
+            &lt;span className="userName">{user?.userInfos?.firstName}&lt;/span>
+          &lt;/h1>
+          &lt;p>Félicitation! Vous avez explosé vos objectifs hier 👏 &lt;/p>
+        &lt;/div>
+        &lt;div className="graphicsAll">
+          &lt;div className="graphicsContainer">
+            &lt;GraphPoids data={userActivity?.sessions} />
+            &lt;div className="graphWrapper">
+              &lt;GraphObjectif data={userAverageSessions} />
+              &lt;GraphPerformance data={userPerformance} />
+              &lt;GraphKpiScore data={user?.todayScore} />
+            &lt;/div>
+          &lt;/div>
+
+           &lt;div className="keyDataWrapper">
+            &lt;KeyData
+              image={CaloriesIcon}
+              title="Calories"
+              value={user?.keyData?.calorieCount}
+              unit="kCal"
+            />
+            &lt;KeyData
+              image={ProteinesIcon}
+              title="Proteines"
+              value={user?.keyData?.proteinCount}
+              unit="g"
+            />
+            &lt;KeyData
+              image={CarbIcon}
+              title="Glucides"
+              value={user?.keyData?.carbohydrateCount}
+              unit="g"
+            />
+            &lt;KeyData
+              image={FatIcon}
+              title="Lipides"
+              value={user?.keyData?.lipidCount}
+              unit="g"
+            />
+          &lt;/div> 
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  );
+}
+
+export default Profil;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="module.html#.exports">exports</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Communaute">Communaute</a></li><li><a href="global.html#CustomTooltip">CustomTooltip</a></li><li><a href="global.html#Error">Error</a></li><li><a href="global.html#getActivity">getActivity</a></li><li><a href="global.html#getAverageSessions">getAverageSessions</a></li><li><a href="global.html#getInfo">getInfo</a></li><li><a href="global.html#getPerformance">getPerformance</a></li><li><a href="global.html#Header">Header</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#KeyData">KeyData</a></li><li><a href="global.html#NavLeft">NavLeft</a></li><li><a href="global.html#Profil">Profil</a></li><li><a href="global.html#Settings">Settings</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Thu Mar 10 2022 09:44:58 GMT+0100 (Central European Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
