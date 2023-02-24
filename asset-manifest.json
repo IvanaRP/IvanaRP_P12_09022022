@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/IvanaRP_P12_09022022/static/css/main.9ed9c1db.css",
+    "main.js": "/IvanaRP_P12_09022022/static/js/main.e9970703.js",
+    "static/media/logo.svg": "/IvanaRP_P12_09022022/static/media/logo.837414860efdf652f26ae7be654e06c5.svg",
+    "static/media/swim_icon.svg": "/IvanaRP_P12_09022022/static/media/swim_icon.e26dba434236828a108a786d8215cd31.svg",
+    "static/media/bike_icon.svg": "/IvanaRP_P12_09022022/static/media/bike_icon.d516c0e89dbb3aaab23afac6a130ca06.svg",
+    "static/media/carbs-icon.svg": "/IvanaRP_P12_09022022/static/media/carbs-icon.123bbbd8489cd07fc698ec1e66ac2015.svg",
+    "static/media/fat-icon.svg": "/IvanaRP_P12_09022022/static/media/fat-icon.82c6cb9fd2b3e6307fca82c2f796ed14.svg",
+    "static/media/protein-icon.svg": "/IvanaRP_P12_09022022/static/media/protein-icon.7e06e9875dedfe9280913d917972ce57.svg",
+    "static/media/yoga_icon.svg": "/IvanaRP_P12_09022022/static/media/yoga_icon.6c31a2775a609d06fd5d99eb347250ed.svg",
+    "index.html": "/IvanaRP_P12_09022022/index.html",
+    "static/media/calories-icon.svg": "/IvanaRP_P12_09022022/static/media/calories-icon.5db5a3aff9bd8f441f49792782c8262e.svg",
+    "static/media/gym_icon.svg": "/IvanaRP_P12_09022022/static/media/gym_icon.4fe7fb9fe3554121b3d42dcb489eefd0.svg",
+    "main.9ed9c1db.css.map": "/IvanaRP_P12_09022022/static/css/main.9ed9c1db.css.map",
+    "main.e9970703.js.map": "/IvanaRP_P12_09022022/static/js/main.e9970703.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ed9c1db.css",
+    "static/js/main.e9970703.js"
+  ]
+}
