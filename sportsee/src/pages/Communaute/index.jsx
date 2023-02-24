@@ -16,7 +16,7 @@ function Communaute() {
       <div className="profilContainer">
         <div className="profilUser">
           <h1>🏗️ Page en construction</h1>
-          <Link to="/" className="home-link">
+          <Link to="/home" className="home-link">
             Retourner sur la page d’accueil !
           </Link>
         </div>
