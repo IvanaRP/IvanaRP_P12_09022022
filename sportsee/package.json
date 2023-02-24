@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react": "^17.0.39"
+    "@types/react": "^17.0.39",
+    "gh-pages": "^5.0.0"
   }
 }
