@@ -9,7 +9,6 @@ import NavLeft from "../NavigationLeft";
  * An 404 error, with a text error and a go back link
  */
 
-
 function Error() {
   return (
     <div className="errorWrapper">
@@ -20,7 +19,7 @@ function Error() {
           <h2 className="error-message">
             Oups! La page que vous demandez n'existe pas.
           </h2>
-          <Link to="/" className="home-link">
+          <Link to="/home" className="home-link">
             Retourner sur la page d’accueil!
           </Link>
         </div>
