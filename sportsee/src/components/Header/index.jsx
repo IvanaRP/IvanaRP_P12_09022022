@@ -5,7 +5,7 @@ import "../../styles/header.css";
 
 /**
  * This function display the header of the website
- * @returns The different part of the header : 
+ * @returns The different part of the header :
  * - the SportSee logo
  * - the component Navigation for displaying the different navigation's link
  */
@@ -13,14 +13,14 @@ import "../../styles/header.css";
 function Header() {
   return (
     <div className="headContainer">
-      <Link to="/">
-      <img src={HeaderLogo} alt="SportSee" className="headLogo" />
+      <Link to="home">
+        <img src={HeaderLogo} alt="SportSee" className="headLogo" />
       </Link>
       <nav className="navContainer">
-        <Link to="/" className="header-link">
+        <Link to="/home" className="header-link">
           Accueil
         </Link>
-        <Link to="/" className="header-link">
+        <Link to="/home" className="header-link">
           Profil
         </Link>
         <Link to="/settings" className="header-link">
