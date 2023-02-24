@@ -112,11 +112,13 @@ export default class FetchData {
   async getAverageSessions(userId) {
     try {
       //MOCKED DATA
-      // const response = await fetch("../data/" + userId + "/USER_AVERAGE_SESSIONS.json");
-      //API DATA
       const response = await fetch(
-        "http://localhost:3000/user/" + userId + "/average-sessions"
+        "../data/" + userId + "/USER_AVERAGE_SESSIONS.json"
       );
+      //API DATA
+      // const response = await fetch(
+      //   "http://localhost:3000/user/" + userId + "/average-sessions"
+      // );
       const data = await response.json();
       return new AverageSessions(data.data);
     } catch (error) {

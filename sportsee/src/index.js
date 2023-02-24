@@ -1,7 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Route_Home, Route_Profil, Route_Settings, Route_Communaute } from "./Utils/router"
+import {
+  Route_Home,
+  Route_Profil,
+  Route_Settings,
+  Route_Communaute,
+} from "./Utils/router";
 
 import Home from "./pages/Home";
 import Error from "./components/Error";
@@ -12,7 +17,6 @@ import Communaute from "./pages/Communaute";
 import Header from "./components/Header";
 
 import "./styles/index.css";
-
 
 ReactDOM.render(
   <React.StrictMode>
