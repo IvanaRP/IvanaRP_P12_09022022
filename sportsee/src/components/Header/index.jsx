@@ -17,10 +17,10 @@ function Header() {
         <img src={HeaderLogo} alt="SportSee" className="headLogo" />
       </Link>
       <nav className="navContainer">
-        <Link to="/home" className="header-link">
+        <Link to="/IvanaRP_P12_09022022" className="header-link">
           Accueil
         </Link>
-        <Link to="/home" className="header-link">
+        <Link to="/IvanaRP_P12_09022022" className="header-link">
           Profil
         </Link>
         <Link to="/settings" className="header-link">

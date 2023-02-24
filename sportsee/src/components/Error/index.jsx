@@ -19,7 +19,7 @@ function Error() {
           <h2 className="error-message">
             Oups! La page que vous demandez n'existe pas.
           </h2>
-          <Link to="/home" className="home-link">
+          <Link to="/IvanaRP_P12_09022022" className="home-link">
             Retourner sur la page d’accueil!
           </Link>
         </div>
